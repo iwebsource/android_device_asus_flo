@@ -41,7 +41,10 @@ PRODUCT_PACKAGES := \
     dhcpcd.conf \
     wpa_supplicant \
     wpa_supplicant.conf \
-    Gallery2
+    Gallery2 \
+    Browser \
+    busybox 
+
 
 PRODUCT_PACKAGES += \
 	lights.msm8960
