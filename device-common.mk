@@ -43,6 +43,7 @@ PRODUCT_PACKAGES := \
     wpa_supplicant.conf \
     Gallery2 \
     Browser \
+    CMFileManager \
     busybox 
 
 
