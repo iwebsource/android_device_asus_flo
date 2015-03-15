@@ -19,8 +19,12 @@
 #
 # Everything in this directory will become public
 
+## CUSTOM KERNEL COMPILE HERE
+#ifeq ($(TARGET_PREBUILT_KERNEL),)
+#LOCAL_KERNEL := device/asus/flo-kernel/kernel/arch/arm/boot/zImage
+
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/asus/flo-kernel/kernel/arch/arm/boot/zImage
+LOCAL_KERNEL := device/asus/flo-kernel/kernel
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
@@ -40,12 +44,7 @@ PRODUCT_PACKAGES := \
     hostapd \
     dhcpcd.conf \
     wpa_supplicant \
-    wpa_supplicant.conf \
-    Gallery2 \
-    Browser \
-    CMFileManager \
-    busybox 
-
+    wpa_supplicant.conf
 
 PRODUCT_PACKAGES += \
 	lights.msm8960
