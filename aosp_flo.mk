@@ -16,7 +16,7 @@
 
 # Sample: This is where we'd set a backup provider if we had one
 # Another Test. $(call inherit-product, device/sample/products/backup_overlay.mk)
-
+# TEST NEW LOLLIPOP-5.1 BRANCH
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
